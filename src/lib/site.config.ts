@@ -1,17 +1,17 @@
 export const siteConfig = {
-  name: "Blog Template",
-  description: "A modern blog template built with Next.js, MDX, and Tailwind CSS",
-  url: process.env.NEXT_PUBLIC_SITE_URL || process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "http://localhost:3000",
-  ogImage: process.env.NEXT_PUBLIC_SITE_URL ? `${process.env.NEXT_PUBLIC_SITE_URL}/og.jpg` : process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}/og.jpg` : "http://localhost:3000/og.jpg",
+  name: "birdsRdinosaurs",
+  description: "A modern weblog with guides, walkthroughs, tips and tricks, as well as an occiasional opinion or two. ",
+  url: process.env.NEXT_PUBLIC_SITE_URL || process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "https://birds-rdinosaurs.vercel.app/",
+  ogImage: process.env.NEXT_PUBLIC_SITE_URL ? `${process.env.NEXT_PUBLIC_SITE_URL}/og.jpg` : process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}/og.jpg` : "https://birds-rdinosaurs.vercel.app/og.jpg",
   links: {
-    twitter: "https://twitter.com/yourusername",
-    github: "https://github.com/yourusername",
-    linkedin: "https://linkedin.com/in/yourusername",
+    twitter: "https://x.com/PrcslyPttr",
+    github: "https://github.com/JPotter702",
+  //  linkedin: "https://linkedin.com/in/yourusername",
   },
   author: {
-    name: "Your Name",
-    email: "your.email@example.com",
-    twitter: "@yourusername",
+    name: "Jason Douglas Potter",
+    email: "selectbynature@gmail.com",
+    twitter: "PrcslyPttr",
     avatar: "",
   },
   // Theme customization
@@ -99,9 +99,9 @@ export const siteConfig = {
   },
   // SEO settings
   seo: {
-    titleTemplate: "%s | Blog Template",
-    defaultTitle: "Blog Template",
-    defaultDescription: "A modern blog template with great SEO and performance",
+    titleTemplate: "%s | birdsRdinosaurs",
+    defaultTitle: "birdsRdinosaurs blog",
+    defaultDescription: "A modern weblog with guides, walkthroughs, tips and tricks, as well as an occiasional opinion or two.",
     keywords: ["blog", "nextjs", "mdx", "tailwind", "typescript"] as string[],
     twitterCard: "summary_large_image",
     canonicalUrl: process.env.NEXT_PUBLIC_SITE_URL || process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "http://localhost:3000",
