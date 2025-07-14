@@ -13,7 +13,7 @@ export const siteConfig = {
     email: "selectbynature@gmail.com",
     twitter: "@jpotter702", // match with above
     avatar: "/avatar.jpg",
-};
+},
   // Theme customization
   theme: {
     // Typography settings
