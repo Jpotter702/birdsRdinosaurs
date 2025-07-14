@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: "birdsRdinosaurs",
-  description: "A modern weblog with guides, walkthroughs, tips and tricks, as well as an occiasional opinion or two. ",
+  description: "A modern weblog with guides, walkthroughs, tips and tricks, as well as an occasional opinion or two. ",
   url: process.env.NEXT_PUBLIC_SITE_URL || process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "https://birds-rdinosaurs.vercel.app/",
   ogImage: process.env.NEXT_PUBLIC_SITE_URL ? `${process.env.NEXT_PUBLIC_SITE_URL}/og.jpg` : process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}/og.jpg` : "https://birds-rdinosaurs.vercel.app/og.jpg",
   links: {
