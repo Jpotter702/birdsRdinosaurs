@@ -1,19 +1,19 @@
 export const siteConfig = {
-  name: "birdsRdinosaurs",
-  description: "A modern weblog with guides, walkthroughs, tips and tricks, as well as an occasional opinion or two. ",
-  url: process.env.NEXT_PUBLIC_SITE_URL || process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "https://birds-rdinosaurs.vercel.app/",
-  ogImage: process.env.NEXT_PUBLIC_SITE_URL ? `${process.env.NEXT_PUBLIC_SITE_URL}/og.jpg` : process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}/og.jpg` : "https://birds-rdinosaurs.vercel.app/og.jpg",
+  name: "Birds Are Dinosaurs",
+  description: "A modern weblog with answers, tutorials, tips and tricks and maybe an occasional opinion or two. ",
+  url: process.env.NEXT_PUBLIC_SITE_URL || process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "http://localhost:3000",
+  ogImage: process.env.NEXT_PUBLIC_SITE_URL ? `${process.env.NEXT_PUBLIC_SITE_URL}/og.jpg` : process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}/og.jpg` : "http://localhost:3000/og.jpg",
   links: {
-    twitter: "https://x.com/PrcslyPttr",
-    github: "https://github.com/JPotter702",
-    linkedin: "https://linkedin.com/in/JPotter702",
+    twitter: "https://twitter.com/jpotter702", // confirm or update this handle
+    github: "https://github.com/jpotter702",
+    linkedin: "https://linkedin.com/in/jpotter702", // or update with correct one
   },
   author: {
-    name: "Jason Douglas Potter",
+    name: "Jason Potter",
     email: "selectbynature@gmail.com",
-    twitter: "PrcslyPttr",
-    avatar: "",
-  },
+    twitter: "@jpotter702", // match with above
+    avatar: "/avatar.jpg",
+} as const;
   // Theme customization
   theme: {
     // Typography settings
@@ -95,16 +95,18 @@ export const siteConfig = {
     showTags: true,
     showExcerpt: true,
     excerptLength: 160,
-    defaultImage: "/default-blog-image.jpg",
+    defaultImage: "/banner.jpg",
   },
   // SEO settings
   seo: {
-    titleTemplate: "%s | birdsRdinosaurs",
-    defaultTitle: "birdsRdinosaurs blog",
-    defaultDescription: "A modern weblog with guides, walkthroughs, tips and tricks, as well as an occiasional opinion or two.",
-    keywords: ["blog", "nextjs", "mdx", "tailwind", "typescript"] as string[],
-    twitterCard: "summary_large_image",
-    canonicalUrl: process.env.NEXT_PUBLIC_SITE_URL || process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "http://localhost:3000",
+    titleTemplate: "%s | Birds Are Dinosaurs",
+    defaultTitle: "Birds Are Dinosaurs",
+      defaultDescription: "A modern blog exploring code, AI, and the weirdness of the world.",
+        keywords: ["jason potter", "ai", "javascript", "python", "mdx", "blog", "tailwind", "openai"],
+        twitterCard: "summary_large_image",
+        canonicalUrl: process.env.NEXT_PUBLIC_SITE_URL || process.env.VERCEL_URL
+        ? `https://${process.env.VERCEL_URL}`
+        : "http://localhost:3000",
   },
   // Navigation
   navigation: {
