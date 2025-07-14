@@ -13,7 +13,7 @@ export const siteConfig = {
     email: "selectbynature@gmail.com",
     twitter: "@jpotter702", // match with above
     avatar: "/avatar.jpg",
-} as const;
+};
   // Theme customization
   theme: {
     // Typography settings
@@ -122,6 +122,6 @@ export const siteConfig = {
       { name: "RSS", href: "/rss.xml" },
     ],
   },
-} as const
+} as const;
 
 export type SiteConfig = typeof siteConfig
