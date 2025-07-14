@@ -102,7 +102,7 @@ export const siteConfig = {
     titleTemplate: "%s | Birds Are Dinosaurs",
     defaultTitle: "Birds Are Dinosaurs",
     defaultDescription: "A modern blog exploring code, AI, and the weirdness of the world.",
-    keywords: ["jason potter", "ai", "javascript", "python", "mdx", "blog", "tailwind", "openai"] as string[],
+    keywords: ["jason potter", "ai", "javascript", "python", "mdx", "blog", "tailwind", "openai"],as string[],
     twitterCard: "summary_large_image",
     canonicalUrl: process.env.NEXT_PUBLIC_SITE_URL || process.env.VERCEL_URL
       ? `https://${process.env.VERCEL_URL}`
