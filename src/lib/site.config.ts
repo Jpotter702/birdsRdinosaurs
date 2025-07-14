@@ -6,7 +6,7 @@ export const siteConfig = {
   links: {
     twitter: "https://x.com/PrcslyPttr",
     github: "https://github.com/JPotter702",
-  //  linkedin: "https://linkedin.com/in/yourusername",
+    linkedin: "https://linkedin.com/in/JPotter702",
   },
   author: {
     name: "Jason Douglas Potter",
