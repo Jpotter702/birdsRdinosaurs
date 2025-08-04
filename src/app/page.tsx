@@ -1,22 +1,21 @@
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { PostCard } from "@/components/blog/post-card"
-import { getAllPosts, getFeaturedPosts } from "@/lib/mdx"
-import { siteConfig } from "@/lib/site.config"
-import { ArrowRight } from "lucide-react"
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { PostCard } from "@/components/blog/post-card";
+import { getAllPosts, getFeaturedPosts } from "@/lib/mdx";
+import { siteConfig } from "@/lib/site.config";
+import { ArrowRight } from "lucide-react";
 
 export default async function Home() {
-  const featuredPosts = getFeaturedPosts()
-  const recentPosts = getAllPosts().slice(0, 3)
-  
+  const featuredPosts = getFeaturedPosts();
+  const recentPosts = getAllPosts().slice(0, 3);
+
   return (
     <div className="space-y-16">
       {/* Hero Section */}
       <section className="container py-12 md:py-24">
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-            Welcome to{" "}
-            <span className="text-primary">{siteConfig.name}</span>
+            Welcome to <span className="text-primary">{siteConfig.name}</span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             {siteConfig.description}
@@ -40,12 +39,14 @@ export default async function Home() {
         <section className="container py-12">
           <div className="space-y-8">
             <div className="text-center space-y-4">
-              <h2 className="text-3xl font-bold tracking-tight">Featured Posts</h2>
+              <h2 className="text-3xl font-bold tracking-tight">
+                Featured Posts
+              </h2>
               <p className="text-lg text-muted-foreground">
                 Highlighted articles and tutorials
               </p>
             </div>
-            
+
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               {featuredPosts.map((post) => (
                 <PostCard key={post.slug} post={post} />
@@ -60,7 +61,9 @@ export default async function Home() {
         <div className="space-y-8">
           <div className="flex items-center justify-between">
             <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tight">Latest Posts</h2>
+              <h2 className="text-3xl font-bold tracking-tight">
+                Latest Posts
+              </h2>
               <p className="text-lg text-muted-foreground">
                 Recent articles and updates
               </p>
@@ -72,7 +75,7 @@ export default async function Home() {
               </Link>
             </Button>
           </div>
-          
+
           {recentPosts.length > 0 ? (
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               {recentPosts.map((post) => (
@@ -87,5 +90,5 @@ export default async function Home() {
         </div>
       </section>
     </div>
-  )
+  );
 }
